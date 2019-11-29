@@ -28,7 +28,11 @@
             <mat-error>deberia tener al menos 6 caracteres</mat-error>
         </mat-form-field>  
         <mat-form-field>
-            <input matInput placeholder="Tu Cumpleaños" [matDatepicker]="picker">
+            <input 
+            matInput 
+            placeholder="Tu Cumpleaños" 
+            [matDatepicker]="picker"
+            [max]="maxDate">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
