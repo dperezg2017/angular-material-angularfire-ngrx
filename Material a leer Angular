@@ -1,0 +1,29 @@
+COMENTAR: option + shift + A
+FORMAT:    shift + option + F
+
+#con [(ngModel)] sobreponemos el valor de esa variable
+<input type="text" [(ngModel)]="productName">
+# recibir datos del exterior en la salida, y pasamos a nuestro evento personalizado
+  @Input() productName:string; 
+  @Output() productClicked = new EventEmitter();ç
+# evento para eliminar bloque
+  onClicked() {
+    this.productClicked.emit();
+  }
+  #si queremos inyecﬁtar en cualquier lugar de la aplicacion AgregarComponentService
+app.module.ts: 
+    providers: [AgregarComponentService],
+
+ # instalar angular material
+ sudo npm install -g @angular/cli
+ # modulo dash al modulo dod
+ ng g c auth/signup --module app.module
+ ng g c auth/login --module app.module
+ ng g c training --module app.module
+ ng g c training/current-training --module app.module
+ ng g c training/new-training --module app.module
+ ng g c training/past-trainings --module app.module
+ ng g c welcome --module app.module
+ #Para implementar responsivo los form con: 
+ npm install @angular/flex-layout @angular/cdk --save
+ import {FlexLayoutModule} from '@angular/flex-layout';
