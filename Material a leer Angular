@@ -25,5 +25,5 @@ app.module.ts:
  ng g c training/past-trainings --module app.module
  ng g c welcome --module app.module
  #Para implementar responsivo los form con: 
- npm install @angular/flex-layout @angular/cdk --save
+ npm install @angular/flex-layout @angular/cdk --save  
  import {FlexLayoutModule} from '@angular/flex-layout';
