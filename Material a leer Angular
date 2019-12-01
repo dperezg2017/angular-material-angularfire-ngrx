@@ -24,6 +24,16 @@ app.module.ts:
  ng g c training/new-training --module app.module
  ng g c training/past-trainings --module app.module
  ng g c welcome --module app.module
+ ng g c navigation/header --module app.module
+  ng g c navigation/sidenav-list --module app.module
  #Para implementar responsivo los form con: 
  npm install @angular/flex-layout @angular/cdk --save  
  import {FlexLayoutModule} from '@angular/flex-layout';
+ # recoursos y lins
+ https://material.angularjs.org/1.1.2/layout/introduction
+ Angular Material Setup Docs: https://material.angular.io/guide/getting-started
+Angular Material Component Docs: https://material.angular.io/components/categories
+Angular Material Github Repo: https://github.com/angular/material2
+@angular/flex-layout Docs: https://github.com/angular/flex-layout
+Flexbox Guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Flexbox Video: https://academind.com/learn/css/understanding-css/flexbox-basics-container
